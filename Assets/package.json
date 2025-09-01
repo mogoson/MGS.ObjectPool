@@ -1,0 +1,7 @@
+{
+    "description": "Design pattern code for Unity project develop.",
+    "displayName": "Design Pattern",
+    "name": "com.mgs.designpattern",
+    "unity": "2019.4",
+    "version": "1.0.0"
+}
