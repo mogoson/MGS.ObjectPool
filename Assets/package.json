@@ -1,7 +1,7 @@
 {
-    "description": "Design pattern code for Unity project develop.",
-    "displayName": "Design Pattern",
-    "name": "com.mgs.designpattern",
-    "unity": "2019.4",
+    "description": "General object pool for Unity object.",
+    "displayName": "Object Pool",
+    "name": "com.mgs.objectpool",
+    "unity": "2021.3",
     "version": "1.0.0"
 }

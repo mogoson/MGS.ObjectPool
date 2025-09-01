@@ -1,0 +1,16 @@
+{
+    "name": "MGS.ObjectPool",
+    "rootNamespace": "",
+    "references": [
+        "GUID:bcd31b7e2bdcb4f419411c5867a0ee87"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
