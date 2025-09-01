@@ -1,16 +1,11 @@
 {
   "dependencies": {
-    "com.mgs.scriptdiemaker": {
-      "version": "file:D:/Programmer/Github/MGS.ScriptDiemaker/Assets",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.mgs.singleton": {
-      "version": "file:D:/Programmer/Github/MGS.Singleton/Assets",
+      "version": "https://github.com/mogoson/MGS.Singleton.git?path=/Assets",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "05c374b4d3e35c0f0e0644e75ddf163cb793291f"
     },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
