@@ -17,7 +17,7 @@ namespace MGS.ObjectPool
     /// <summary>
     /// Object pool for GameObject.
     /// </summary>
-    public class GoPool : ObjectPool<GameObject>
+    public class GoPool : ObjectPool<GameObject>, IGoPool
     {
         /// <summary>
         /// Root of gameobjects.

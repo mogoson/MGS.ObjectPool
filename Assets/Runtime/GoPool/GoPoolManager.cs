@@ -11,7 +11,6 @@
  *************************************************************************/
 
 using System.Collections.Generic;
-using MGS.Singleton;
 using UnityEngine;
 
 namespace MGS.ObjectPool
@@ -19,22 +18,22 @@ namespace MGS.ObjectPool
     /// <summary>
     /// Manager of gameobject pool.
     /// </summary>
-    public sealed class GoPoolManager : Singleton<GoPoolManager>
+    public class GoPoolManager : IGoPoolManager
     {
         /// <summary>
         /// Pools infos (name and pool).
         /// </summary>
-        private Dictionary<string, GoPool> pools = new Dictionary<string, GoPool>();
+        protected Dictionary<string, IGoPool> pools = new Dictionary<string, IGoPool>();
 
         /// <summary>
         /// Root transform for pools.
         /// </summary>
-        private readonly Transform root;
+        protected Transform root;
 
         /// <summary>
         /// Constructor.
         /// </summary>
-        private GoPoolManager()
+        public GoPoolManager()
         {
             //Create the root for pools.
             root = new GameObject(GetType().Name).transform;
@@ -48,7 +47,7 @@ namespace MGS.ObjectPool
         /// <param name="prefab">Prefab of pool.</param>
         /// <param name="capacity">Capacity of object pool.</param>
         /// <returns>Pool created base on parameters.</returns>
-        public GoPool CreatePool(string name, GameObject prefab, int capacity = 25)
+        public IGoPool CreatePool(string name, GameObject prefab, int capacity = 25)
         {
             if (string.IsNullOrEmpty(name))
             {
@@ -80,7 +79,7 @@ namespace MGS.ObjectPool
         /// </summary>
         /// <param name="name">Name of GameObjectPool.</param>
         /// <returns>Name match GameObjectPool.</returns>
-        public GoPool FindPool(string name)
+        public IGoPool FindPool(string name)
         {
             if (pools.ContainsKey(name))
             {
