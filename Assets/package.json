@@ -1,7 +1,24 @@
 {
-    "description": "General object pool for Unity object.",
-    "displayName": "Object Pool",
     "name": "com.mgs.objectpool",
+    "version": "1.0.0",
+    "displayName": "Object Pool",
+    "description": "General pool for object.",
     "unity": "2021.3",
-    "version": "1.0.0"
+    "keywords": [
+        "object",
+        "pool",
+        "manager"
+    ],
+    "author": {
+        "name": "Mogoson",
+        "email": "mogoson@outlook.com",
+        "url": "https://github.com/mogoson"
+    },
+    "samples": [
+        {
+            "displayName": "Sample",
+            "description": "Sample for object pool",
+            "path": "Samples~/Sample"
+        }
+    ]
 }
